@@ -1,6 +1,10 @@
 define(["require", "exports", "jquery"], function (require, exports, jquery) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
+    window.addEventListener("load", cargar);
+    function cargar() {
+        console.log("Hola mundo");
+    }
     var $ = jquery;
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     (function () {
@@ -18,12 +22,22 @@ define(["require", "exports", "jquery"], function (require, exports, jquery) {
             }, false);
         });
     })();
-    $("#submitbutton").click(function () {
-        if ($('input[type=checkbox]:checked').length == 0) {
-            alert('Por favor seleccione al menos una casilla');
-        }
-        else {
-            location.href = 'Submit.html';
-        }
-    });
+    var rut;
+    var telefono;
+    var correo;
+    var acudientes;
+    var fecha;
+    var region;
+    var comuna;
+    var direccion;
+    var curso;
+    rut = "111111111-1";
+    telefono = 11111111111;
+    correo = "maria.perez@gmail.com";
+    acudientes = "Ninguno";
+    fecha = new Date("2016-05-12");
+    region = "Valparaiso";
+    comuna = "Valparaiso";
+    direccion = "XXXXXXXXX";
+    curso = "4 primaria";
 });

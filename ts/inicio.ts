@@ -1,3 +1,7 @@
+window.addEventListener("load",cargar);
+function cargar(){
+	console.log("Hola mundo");
+}
 import jquery=require('jquery');
 const $:JQueryStatic=jquery;
 
@@ -21,14 +25,24 @@ const $:JQueryStatic=jquery;
     })
   })()
 
-  $("#submitbutton").click(function(){
+  
 
-    if($('input[type=checkbox]:checked').length == 0)
-    {
-        alert('Por favor seleccione al menos una casilla');
-    }else{
-      location.href = 'Submit.html';
+  let rut:string;
+  let telefono:number;
+  let correo:string;
+  let acudientes:string;
+  let fecha:Date;
+  let region:string;
+  let comuna:string;
+  let direccion: string;
+  let curso:string;
 
-    }
-});
-
+rut ="111111111-1"
+telefono=11111111111
+correo="maria.perez@gmail.com"
+acudientes="Ninguno"
+fecha= new Date("2016-05-12")
+region="Valparaiso"
+comuna="Valparaiso"
+direccion="XXXXXXXXX"
+curso="4 primaria"
